@@ -169,7 +169,11 @@ export default function PricingPage() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ plan, billingPeriod }),
+          body: JSON.stringify({
+            plan,
+            billingPeriod,
+            email: "kunalsalunkhe360@gmail.com",
+          }),
         }
       );
 
@@ -353,7 +357,7 @@ function PricingCard({
     >
       <CardHeader className="flex-grow-0">
         {tier.popular && (
-          <div className="absolute top-2 right-2 bg-[#2F76FF] text-white text-xs font-bold px-3 py-1 rounded-lg">
+          <div className="absolute top-2 right-2 bg-[#2F76FF] text-white text-xs font-bold px-3 py-1 rounded-[20px]">
             Popular
           </div>
         )}
