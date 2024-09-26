@@ -1,6 +1,5 @@
 export const navLinks = [
   { id: "home", label: "Home", href: "/" },
-  { id: "about", label: "About", href: "/#about" },
   { id: "services", label: "Pricing", href: "/pricing" },
   { id: "projects", label: "FAQ's ", href: "/faqs" },
   {
@@ -12,7 +11,6 @@ export const navLinks = [
 export const footLinks = [
   { id: "product", label: "Product", href: "/" },
   { id: "home", label: "Home", href: "/#home" },
-  { id: "aboutus", label: "About Us", href: "/#aboutus" },
   { id: "services", label: "Services", href: "/#services" },
   { id: "login", label: "Login In/ Sign Up", href: "/#login" },
   { id: "blog", label: "Explore Blogs", href: "/#blogs" },
