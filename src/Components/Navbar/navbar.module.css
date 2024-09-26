@@ -1,0 +1,223 @@
+.nav {
+  height: 68px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px 12px 40px;
+
+  background: linear-gradient(
+      293.27deg,
+      rgba(0, 3, 98, 0.5) 0.61%,
+      rgba(7, 50, 63, 0.5) 99.39%
+    ),
+    rgba(25, 53, 93, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+/* Note: backdrop-filter has minimal browser support */
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  color: black;
+  list-style: none;
+}
+.logo_container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerMenu {
+  color: white;
+}
+.logo {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  width: auto;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.bottle {
+  width: 160.98px;
+  height: 40px;
+}
+
+.prod {
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.links a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 550;
+}
+.burg_cont {
+  display: flex;
+}
+.inner_list {
+  /* display: none; */
+  width: 200px;
+  font-size: 1rem;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+  background-color: aliceblue;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+}
+.prod:hover.prod > ul {
+  height: auto;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.arrow {
+  margin-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+.prod:hover.prod > .arrow {
+  transform: rotate(-90deg);
+}
+.list_item {
+  margin: 20px;
+  font-size: 1rem;
+  position: relative;
+}
+.list_item > a {
+  font-size: initial;
+}
+.list_item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  transition: 0.5s ease-in-out;
+}
+.list_item:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+}
+.link_a {
+  padding: 0px 20px;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.inner_list > ul {
+  list-style: none;
+}
+
+.logo_name {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.active {
+  position: relative;
+  display: inline-block;
+  color: #2f76ff;
+  font-weight: 500;
+}
+
+/* .active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+} */
+
+@media only screen and (min-width: 1068px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .links {
+    display: flex;
+    color: var(--primary-font-color);
+
+    justify-content: flex-end;
+  }
+
+  .burg_cont {
+    display: none;
+  }
+}
+
+.btncon {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-left: 20px;
+}
+.login {
+  padding: 7.93041px 19.033px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.signup {
+  color: white;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7.93041px 19.033px;
+  background: #2f76ff;
+  border-radius: 2px;
+  border: none;
+}

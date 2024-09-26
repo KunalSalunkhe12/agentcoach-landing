@@ -1,0 +1,215 @@
+.maincon {
+  height: auto;
+  width: 100%;
+  background: rgba(15, 16, 35, 0.8);
+}
+
+.box {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box > h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.cardimg {
+  padding-bottom: 11px;
+  height: 100%;
+  width: auto;
+}
+
+.box > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.cardcon {
+  padding: 32px 185px 0px 185px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.up {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.below {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 200px;
+  background: linear-gradient(
+      149.88deg,
+      #021057 37.22%,
+      #14345c 70.43%,
+      #041458 97.89%,
+      #062e41 132.38%,
+      #010d59 150.9%
+    ),
+    #021157; /* Initial background */
+  border-top: 2.7px solid #2f76ff; /* Visible top border */
+  border-left: 1.8px solid transparent; /* Transparent left border */
+  border-right: 1.8px solid transparent; /* Transparent right border */
+  border-bottom: 1.8px solid transparent; /* Transparent bottom border */
+  box-shadow: 3.73846px 6.54231px 24.3px rgba(0, 0, 0, 0.12),
+    3.73846px 6.54231px 24.3px rgba(0, 0, 0, 0.12),
+    3.73846px 6.54231px 24.3px rgba(0, 0, 0, 0.12);
+  border-radius: 11.2154px;
+  padding: 29px 10px;
+  transition: background 0.6s ease, border-color 0.6s ease; /* Smooth transition for both background and border */
+}
+
+.card:hover {
+  cursor: pointer;
+  background: linear-gradient(
+      323.32deg,
+      #010d59 -36.99%,
+      #062e41 -7.8%,
+      #041458 46.54%,
+      #14345c 89.82%,
+      #021057 142.15%
+    ),
+    #021157;
+  border-top: 2.7px solid #2f76ff;
+  border-left: 1.8px solid #2f76ff;
+  border-right: 1.8px solid #2f76ff;
+  border-bottom: 1.8px solid #2f76ff;
+}
+
+.cardh1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 4px;
+}
+
+.cardp {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #b5b5b5;
+}
+
+/* background: linear-gradient(323.32deg, #010D59 -36.99%, #062E41 -7.8%, #041458 46.54%, #14345C 89.82%, #021057 142.15%), #021157;
+border: 1.8px solid #2F76FF; */
+.glow {
+  bottom: -15px;
+  right: -18px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3.6px 3.6px rgba(47, 118, 255, 0.29);
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .glow {
+  transform: scale(1);
+  opacity: 1;
+  width: 52px;
+  height: 52px;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .arrow {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .box > h1 {
+    font-size: 30px;
+  }
+  .box > p {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .cardcon {
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .up {
+    gap: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  .below {
+    gap: 30px;
+
+    flex-direction: column;
+  }
+  .glow {
+    opacity: 1;
+    transform: scale(1);
+    width: 52px;
+    height: 52px;
+  }
+
+  .arrow {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+  }
+  .card {
+    border-top: 2.7px solid #2f76ff;
+    border-left: 1.8px solid #2f76ff;
+    border-right: 1.8px solid #2f76ff;
+    border-bottom: 1.8px solid #2f76ff;
+  }
+}

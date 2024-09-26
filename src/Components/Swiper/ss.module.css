@@ -1,0 +1,148 @@
+.main {
+  /* margin-top: 68px; */
+  padding-top: 68px;
+  padding-bottom: 80px;
+  /* min-height: 110vh; */
+  height: auto;
+  width: 100%;
+  background: rgba(15, 16, 35, 0.8);
+}
+.box {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box > h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.box > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.singlecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 21px;
+  width: 303.75px;
+  height: 346px;
+  background: linear-gradient(337.76deg, #000362 14.51%, #07323f 85.49%);
+  box-shadow: 15px 10.5px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.pptext {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.position {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #adadad;
+}
+.detcon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+.name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2f76ff;
+}
+
+.imgcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: fit-content;
+  position: relative;
+}
+.pp {
+  width: 129px;
+  height: 129px;
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 51.46px;
+  height: 51.46px;
+}
+
+.cardcon {
+  padding-top: 50px;
+}
+
+.mySwiper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.swiper-slide-active {
+  z-index: 100;
+}
+.swipercon {
+  user-select: none;
+  cursor: grab;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 140px;
+}
+
+.swipercon:active {
+  cursor: grabbing;
+}
+@media (max-width: 768px) {
+  .box > h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 20px;
+  }
+  .box > p {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .swipercon {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+}
