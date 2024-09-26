@@ -368,9 +368,9 @@ function PricingCard({
           {tier.description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow flex flex-col justify-between">
+      <CardContent className="flex-grow flex flex-col">
         <div>
-          <p className="text-3xl font-bold mb-4">
+          <p className="flex flex-col items-start text-3xl font-bold mb-4">
             <span className="flex items-baseline">
               {price}
               {tier.plan !== "organization" && (
@@ -380,7 +380,7 @@ function PricingCard({
               )}
             </span>
             {strikethrough && (
-              <span className="line-through text-xl font-extralight text-gray-500">
+              <span className="line-through text-xl font-extralight text-gray-500 text-start">
                 {originalPrice}
               </span>
             )}
