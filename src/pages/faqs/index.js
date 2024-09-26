@@ -1,8 +1,8 @@
 import React from "react";
 // import styles from "./faqs.module.css";
-import Footer from "@/components/Footer/Footer";
-import Layout from "@/components/Layout/Layout";
-import Faq from "@/components/FAQ/Faq";
+import Footer from "@/Components/Footer/Footer";
+import Layout from "@/Components/Layout/Layout";
+import Faq from "@/Components/FAQ/Faq";
 
 const Index = () => {
   return (

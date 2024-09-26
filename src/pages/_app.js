@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Mobilenavbar from "@/components/Navbar/MobileNavbar";
-import Navbar from "@/components/Navbar/Navbar";
+import Mobilenavbar from "@/Components/Navbar/MobileNavbar";
+import Navbar from "@/Components/Navbar/Navbar";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
