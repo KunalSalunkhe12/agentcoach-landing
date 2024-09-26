@@ -1,5 +1,5 @@
 import React from "react";
-import PricingPage from "@/Components/pricing-page";
+import PricingPage from "@/components/pricing-page";
 
 const index = () => {
   return <PricingPage />;
