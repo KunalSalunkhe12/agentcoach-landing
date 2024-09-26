@@ -370,7 +370,7 @@ function PricingCard({
       </CardHeader>
       <CardContent className="flex-grow flex flex-col justify-between">
         <div>
-          <p className="text-3xl font-bold mb-4">
+          <p className="text-3xl font-bold mb-4 flex flex-col items-start">
             <span className="flex items-baseline">
               {price}
               {tier.plan !== "organization" && (
